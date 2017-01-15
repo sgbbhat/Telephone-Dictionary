@@ -35,7 +35,6 @@ int main(int argc, char** argv) {
     PhoneDirectory.AddItem("ABC7", "22227");
     PhoneDirectory.AddItem("ABC8", "33338");
     PhoneDirectory.AddItem("ABC9", "44449");
-    PhoneDirectory.AddItem("ABC10", "555510");
     
     PhoneDirectory.PrintTable();
     PhoneDirectory.PrintItemsInIndex(3);
