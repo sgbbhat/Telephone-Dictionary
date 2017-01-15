@@ -37,6 +37,8 @@ public:
     
     hashClass();        // Constructor for the class
     
+    hashClass(int size);        // Constructor for the class
+    
     int Hash(string key);
     
     void AddItem(string name, string Number);

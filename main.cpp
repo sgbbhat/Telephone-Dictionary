@@ -25,16 +25,45 @@ using namespace std;
 int main(int argc, char** argv) {
     hashClass PhoneDirectory;
     string name;
+    int action;
     
-    PhoneDirectory.AddItem("ABC1", "11111");
-    PhoneDirectory.AddItem("ABC2", "22222");
-    PhoneDirectory.AddItem("ABC3", "33333");
-    PhoneDirectory.AddItem("ABC4", "44444");
-    PhoneDirectory.AddItem("ABC5", "55555");
-    PhoneDirectory.AddItem("ABC6", "11116");
-    PhoneDirectory.AddItem("ABC7", "22227");
-    PhoneDirectory.AddItem("ABC8", "33338");
-    PhoneDirectory.AddItem("ABC9", "44449");
+    while(1)
+    {
+        cout<<"Select your action from the following : "<<"\n";
+        cout<<"1 : Add items to phone book"<<endl;
+        cout<<"2 : Add items to phone book"<<endl;
+        cout<<"3 : Add items to phone book"<<endl;
+        cout<<"4 : Add items to phone book"<<endl;
+        cout<<"5 : Add items to phone book"<<endl;
+        cin>>action;      
+        
+        switch(action)
+        {
+            case 1: 
+                cout<< "You entered "<<action<<endl;
+                break;
+        
+            case 2: 
+                cout<<"You entered "<<action<<endl;
+                break;
+        
+            case 3: 
+                cout<<"You entered "<<action<<endl;
+                break;
+        
+            case 4: 
+                cout<<"You entered "<<action<<endl;
+                break;
+        
+            case 5: 
+                cout<<"You entered "<<action<<endl;
+                break;
+                
+            default : 
+                cout<<"Enter a value between 1 to 5"<<endl;
+                break;
+        }
+    }
     
     PhoneDirectory.PrintTable();
     PhoneDirectory.PrintItemsInIndex(3);
