@@ -15,6 +15,8 @@
 #include <iostream>
 #include <string>
 
+#define tableSize   50   // Determines the size of the hash table to work with
+
 using namespace std;
 
 #ifndef HASH_H
@@ -26,7 +28,6 @@ using namespace std;
 class hashClass
 {
 private:
-    static const int tableSize = 5;      // Determines the size of the hash table to work with
     
     struct item{
         string Name;

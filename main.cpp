@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
         cout<<"3 : To PRINT items in INDEX"<<endl;
         cout<<"4 : To SEARCH a number by name"<<endl;
         cout<<"5 : To REMOVE items from the phone book"<<endl;
-        cout<<"6 : To Exit";  
+        cout<<"6 : To Exit"<<endl;  
         cin>>action;      
         
         // Executes one of the case based on user input
