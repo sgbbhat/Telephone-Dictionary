@@ -11,6 +11,11 @@
 
 using namespace std;
 
+/*
+ * Constructor : hashClass
+ * ----------------------------
+ *   No return values
+ */
 hashClass::hashClass()
 {
     // Initializing default values to items
@@ -23,6 +28,16 @@ hashClass::hashClass()
     }
 }
 
+
+/*
+ * Function : Hash
+ * ----------------------------
+ *   Returns an integer based on the string value passed
+ *
+ *   key: one string value 
+ *
+ *   returns:  integer based on the string value passed
+ */
 int hashClass::Hash(string key)
 {
     int hash = 0;
@@ -37,6 +52,16 @@ int hashClass::Hash(string key)
     return index;
 }
 
+/*
+ * Function : AddItem
+ * ----------------------------
+ *   Adds name and number passed to the phone-book No return values
+ *
+ *   name: string value
+ *   number: string value
+ *
+ *   returns: nothing
+ */
 void hashClass::AddItem(string name, string number)
 {
     int index = Hash(name);
@@ -59,6 +84,15 @@ void hashClass::AddItem(string name, string number)
     }
 }
 
+/*
+ * Function : NumberOfItemsInIndex
+ * ----------------------------
+ *   Returns number of items in a chain
+ *
+ *   index: one integer value whose chained items to be counted
+ *
+ *   returns: number of items in a chain
+ */
 int hashClass::NumberOfItemsInIndex(int index)
 {
     int count = 0;
@@ -80,6 +114,14 @@ int hashClass::NumberOfItemsInIndex(int index)
     }
 }
 
+/*
+ * Function : PrintTable
+ * ----------------------------
+ * Prints all the contacts present in the phone book. 
+ * 
+ * Returns nothing
+ *
+ */
 void hashClass::PrintTable()
 {
     int number;
@@ -96,6 +138,15 @@ void hashClass::PrintTable()
     }
 }
 
+/*
+ * Function : PrintItemsInIndex
+ * ----------------------------
+ *   Prints all the items in an index. 
+ *
+ *   index : one integer values whose items in a chain to be displayed
+ *
+ *   returns: nothing
+ */
 void hashClass::PrintItemsInIndex(int index)
 {
     item * ptr = HashTable[index];
@@ -118,6 +169,15 @@ void hashClass::PrintItemsInIndex(int index)
     }
 }
 
+/*
+ * Function : FindNumber
+ * ----------------------------
+ *   Finds number corresponding to the name passed. Prints the number 
+ *
+ *   name: one string value, name  
+ *
+ *   returns: nothing 
+ */
 void hashClass::FindNumber(string name)
 {
     int index = Hash(name);
@@ -147,6 +207,16 @@ void hashClass::FindNumber(string name)
     }
 }
 
+
+/*
+ * Function : RemoveItem
+ * ----------------------------
+ *   Deletes the item associated with the name passed
+ *
+ *   name : one string value
+ *
+ *   returns: nothing
+ */
 void hashClass::RemoveItem(string name)
 {
     int index = Hash(name);
