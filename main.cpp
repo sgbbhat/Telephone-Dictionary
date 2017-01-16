@@ -21,6 +21,7 @@ using namespace std;
 
 /* Main program 
  * Uses class defined in hash.h
+ * Controls operation of the program
  */
 int main(int argc, char** argv) {
     hashClass PhoneBook;
