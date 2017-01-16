@@ -20,6 +20,9 @@ using namespace std;
 #ifndef HASH_H
 #define HASH_H
 
+
+// Hash Table Structure declaration
+
 class hashClass
 {
 private:
@@ -35,23 +38,21 @@ private:
     
 public:
     
-    hashClass();        // Constructor for the class
+    hashClass();                // Constructor for the class
     
-    hashClass(int size);        // Constructor for the class
+    int Hash(string key);       // Hash function - returns an integer based on the string 
     
-    int Hash(string key);
+    void AddItem(string name, string Number);   // To add items to the table
     
-    void AddItem(string name, string Number);
+    int NumberOfItemsInIndex(int index);        // To track number of items in case of collision
     
-    int NumberOfItemsInIndex(int index);
+    void PrintTable();                          // To display all the elements added
     
-    void PrintTable();
+    void PrintItemsInIndex(int index);          // To print items in an index
     
-    void PrintItemsInIndex(int index);
+    void FindNumber(string name);               // To search number based on name
     
-    void FindNumber(string name);
-    
-    void RemoveItem(string name);
+    void RemoveItem(string name);               // To delete the item based on name
 };
 
 
