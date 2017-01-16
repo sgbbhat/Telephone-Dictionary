@@ -23,7 +23,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    hashClass PhoneDirectory;
+    hashClass PhoneBook;
     string name, phoneNumber;
     int action, itemIndex;
     
@@ -45,33 +45,33 @@ int main(int argc, char** argv) {
                 cin>>name;
                 cout<<"Enter corresponding phone number : "<<endl;
                 cin>>phoneNumber;
-                PhoneDirectory.AddItem(name, phoneNumber);
+                PhoneBook.AddItem(name, phoneNumber);
                 break;
         
             case 2: 
                 cout<<"You entered "<<action<<endl;
-                PhoneDirectory.PrintTable();
+                PhoneBook.PrintTable();
                 break;
         
             case 3: 
                 cout<<"You entered "<<action<<endl;
                 cout<< "Enter inIndex of the item to be printed : ";
                 cin>>itemIndex;
-                PhoneDirectory.PrintItemsInIndex(itemIndex);
+                PhoneBook.PrintItemsInIndex(itemIndex);
                 break;
         
             case 4: 
                 cout<<"You entered "<<action<<endl;
                 cout<<"Enter the name : ";
                 cin>>name;
-                PhoneDirectory.FindNumber(name);
+                PhoneBook.FindNumber(name);
                 break;
         
             case 5: 
                 cout<<"You entered "<<action<<endl;
                 cout<<"Enter the name to be removed : ";
                 cin>>name;
-                PhoneDirectory.RemoveItem(name);
+                PhoneBook.RemoveItem(name);
                 break;
                 
             default : 
